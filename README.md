@@ -29,8 +29,8 @@ The following products / tools are needed to contribute / fork.
 * NCrunch [http://www.ncrunch.net/](http://www.ncrunch.net/)
 
 ## Authors
-* Matthias Keller
 * Stefan Mettler
+* Matthias Keller
 
 ## License
 Licensed under the MIT License
