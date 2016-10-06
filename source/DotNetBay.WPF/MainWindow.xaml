@@ -4,9 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DotNetBay.WPF"
+        d:DataContext="{d:DesignInstance Type=local:MainWindow}"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <DataGrid Name="AuctionsDataGrid" Grid.Row="2" ItemsSource="{Binding Auctions}" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGridTextColumn Header="Title" Binding="{Binding Path=Title}" />
+            <DataGridTextColumn Header="Status" />
+            <DataGridTextColumn Header="Start Price" Binding="{Binding Path=StartPrice}" />
+            <DataGridTextColumn Header="Current Price" Binding="{Binding Path=CurrentPrice}" />
+            <DataGridTextColumn Header="Bids" Binding="{Binding Path=Bids.Count}" />
+            <DataGridTextColumn Header="Starts" Binding="{Binding Path=StartDateTimeUtc}" />
+            <DataGridTextColumn Header="Ends" Binding="{Binding Path=EndDateTimeUtc}" />
+            <DataGridTextColumn Header="Seller" Binding="{Binding Path=Seller.DisplayName}" />
+            <DataGridTextColumn Header="Current Winner" Binding="{Binding Path=Winner.DisplayName}" />
+            <DataGridTextColumn Header="Closed" Binding="{Binding Path=CloseDateTimeUtc}" />
+            <DataGridTextColumn Header="Place Bid" />
+        </DataGrid>
     </Grid>
 </Window>
