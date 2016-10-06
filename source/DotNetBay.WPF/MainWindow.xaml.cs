@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DotNetBay.Core;
 using DotNetBay.Data.Entity;
+using Microsoft.Win32;
 
 namespace DotNetBay.WPF
 {
