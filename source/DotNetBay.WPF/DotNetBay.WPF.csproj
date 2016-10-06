@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DotNetBay.WPF</RootNamespace>
     <AssemblyName>DotNetBay.WPF</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -100,28 +101,6 @@
       <Project>{9ef46b21-b552-4cc6-a4c0-e81091a4064b}</Project>
       <Name>DotNetBay.BusinessLogic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Cmd\DotNetBay.Cmd.csproj">
-      <Project>{eb070b8c-4cbf-425d-90fa-48834dbee9b8}</Project>
-      <Name>DotNetBay.Cmd</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Data.Entity\DotNetBay.Data.Entity.csproj">
-      <Project>{908d8739-3185-46eb-a03e-6b6c3849857c}</Project>
-      <Name>DotNetBay.Data.Entity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Data.Provider.FileStorage\DotNetBay.Data.Provider.FileStorage.csproj">
-      <Project>{92942123-c7ec-4418-9b48-f5d62be7e7a3}</Project>
-      <Name>DotNetBay.Data.Provider.FileStorage</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Interfaces\DotNetBay.Interfaces.csproj">
-      <Project>{17745e6c-337c-44bd-9c50-5f1d45ceada5}</Project>
-      <Name>DotNetBay.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Test\DotNetBay.Test.csproj">
-      <Project>{9dfa662d-5cf3-43e6-88e1-61d4d1fe02ad}</Project>
-      <Name>DotNetBay.Test</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DotNetBay.BusinessLogic\DotNetBay.BusinessLogic.csproj">
       <Project>{9ef46b21-b552-4cc6-a4c0-e81091a4064b}</Project>
       <Name>DotNetBay.BusinessLogic</Name>
@@ -130,6 +109,14 @@
       <Project>{eb070b8c-4cbf-425d-90fa-48834dbee9b8}</Project>
       <Name>DotNetBay.Cmd</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DotNetBay.Cmd\DotNetBay.Cmd.csproj">
+      <Project>{eb070b8c-4cbf-425d-90fa-48834dbee9b8}</Project>
+      <Name>DotNetBay.Cmd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNetBay.Data.Entity\DotNetBay.Data.Entity.csproj">
+      <Project>{908d8739-3185-46eb-a03e-6b6c3849857c}</Project>
+      <Name>DotNetBay.Data.Entity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DotNetBay.Data.Entity\DotNetBay.Data.Entity.csproj">
       <Project>{908d8739-3185-46eb-a03e-6b6c3849857c}</Project>
       <Name>DotNetBay.Data.Entity</Name>
@@ -138,9 +125,21 @@
       <Project>{92942123-c7ec-4418-9b48-f5d62be7e7a3}</Project>
       <Name>DotNetBay.Data.Provider.FileStorage</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DotNetBay.Data.Provider.FileStorage\DotNetBay.Data.Provider.FileStorage.csproj">
+      <Project>{92942123-c7ec-4418-9b48-f5d62be7e7a3}</Project>
+      <Name>DotNetBay.Data.Provider.FileStorage</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DotNetBay.Interfaces\DotNetBay.Interfaces.csproj">
       <Project>{17745e6c-337c-44bd-9c50-5f1d45ceada5}</Project>
       <Name>DotNetBay.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNetBay.Interfaces\DotNetBay.Interfaces.csproj">
+      <Project>{17745e6c-337c-44bd-9c50-5f1d45ceada5}</Project>
+      <Name>DotNetBay.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNetBay.Test\DotNetBay.Test.csproj">
+      <Project>{9dfa662d-5cf3-43e6-88e1-61d4d1fe02ad}</Project>
+      <Name>DotNetBay.Test</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
