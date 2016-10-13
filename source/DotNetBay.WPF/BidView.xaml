@@ -37,7 +37,7 @@
         <Label x:Name="LblCurrentPrice"  Grid.Row="5"  Grid.Column="1" Content="Your Bid" HorizontalAlignment="Left" VerticalAlignment="Top"  />
         
         
-        <Image x:Name="ImgAuction" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="C"  VerticalAlignment="Top" Width="150" Height="150"/>
+        <Image x:Name="ImgAuction" Grid.Row="2"  Grid.Column="1" Width="150" Height="150"/>
 
         <Label x:Name="LblForTxtBid"  Grid.Row="6"  Grid.Column="0" Content="Your Bid" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" />
         <TextBox x:Name="TxtBid"  Grid.Row="6"  Grid.Column="1"  HorizontalAlignment="Stretch" Height="30"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"  />
