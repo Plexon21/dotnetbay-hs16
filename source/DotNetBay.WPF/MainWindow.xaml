@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:DotNetBay.WPF"
         d:DataContext="{d:DesignInstance Type=local:MainWindow}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow">
     <Grid>
-        <DataGrid Name="AuctionsDataGrid" Grid.Row="2" ItemsSource="{Binding Auctions}" AutoGenerateColumns="False" IsReadOnly="True">
+       
+        <DataGrid Name="AuctionsDataGrid" ItemsSource="{Binding Auctions}" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,52,0.333,0.333">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Title" Binding="{Binding Path=Title}" />
                 <DataGridTextColumn Header="Status" />
@@ -23,5 +24,6 @@
                 <DataGridTextColumn Header="Place Bid" />
             </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="NewAuction" Content="New Auction" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
     </Grid>
 </Window>

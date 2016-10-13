@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="NewAuction.xaml.cs">
+      <DependentUpon>NewAuction.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SellView.xaml.cs">
       <DependentUpon>SellView.xaml</DependentUpon>
     </Compile>
@@ -78,6 +81,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NewAuction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

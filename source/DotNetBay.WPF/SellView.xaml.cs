@@ -18,7 +18,7 @@ namespace DotNetBay.WPF
     /// <summary>
     /// Interaction logic for SellView.xaml
     /// </summary>
-    public partial class SellView : Page
+    public partial class SellView
     {
         public SellView()
         {
