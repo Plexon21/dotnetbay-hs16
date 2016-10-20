@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 using DotNetBay.Core;
 using DotNetBay.Core.Execution;
@@ -18,19 +14,31 @@ namespace DotNetBay.WPF
     /// </summary>
     public partial class App : Application
     {
-        public readonly IMainRepository MainRepository = new FileSystemMainRepository("repository");
-        public readonly IAuctionRunner AuctionRunner;
+        public IMainRepository MainRepository { get; private set; }
+        public IAuctionRunner AuctionRunner { get; private set; }
 
         public App()
         {
-            AuctionRunner = new AuctionRunner(MainRepository);
+            this.MainRepository = new FileSystemMainRepository("appdata.json");
+            this.MainRepository.SaveChanges();
+
+            this.FillSampleData();
+
+            this.AuctionRunner = new AuctionRunner(this.MainRepository);
             this.AuctionRunner.Start();
 
+
+        }
+
+        private void FillSampleData()
+        {
             var memberService = new SimpleMemberService(this.MainRepository);
             var service = new AuctionService(this.MainRepository, memberService);
+
             if (!service.GetAll().Any())
             {
                 var me = memberService.GetCurrentMember();
+
                 service.Save(new Auction
                 {
                     Title = "My First Auction",
@@ -40,7 +48,6 @@ namespace DotNetBay.WPF
                     Seller = me
                 });
             }
-
         }
     }
 }

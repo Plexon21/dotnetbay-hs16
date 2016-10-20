@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{82CABA06-E20C-4357-B66D-467A2F72B2A2}</ProjectGuid>
+    <ProjectGuid>{E1E551B4-F254-464B-9B88-C14FD3E339BF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DotNetBay.WPF</RootNamespace>
@@ -50,12 +50,40 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BidView.xaml.cs">
+      <DependentUpon>BidView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IsClosedToStatusTextConverter.cs" />
     <Compile Include="SellView.xaml.cs">
       <DependentUpon>SellView.xaml</DependentUpon>
     </Compile>
@@ -70,9 +98,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="BidView.xaml.cs">
-      <DependentUpon>BidView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -101,6 +126,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,36 +140,6 @@
     <ProjectReference Include="..\DotNetBay.BusinessLogic\DotNetBay.BusinessLogic.csproj">
       <Project>{9ef46b21-b552-4cc6-a4c0-e81091a4064b}</Project>
       <Name>DotNetBay.BusinessLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Cmd\DotNetBay.Cmd.csproj">
-      <Project>{eb070b8c-4cbf-425d-90fa-48834dbee9b8}</Project>
-      <Name>DotNetBay.Cmd</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Data.Entity\DotNetBay.Data.Entity.csproj">
-      <Project>{908d8739-3185-46eb-a03e-6b6c3849857c}</Project>
-      <Name>DotNetBay.Data.Entity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Data.Provider.FileStorage\DotNetBay.Data.Provider.FileStorage.csproj">
-      <Project>{92942123-c7ec-4418-9b48-f5d62be7e7a3}</Project>
-      <Name>DotNetBay.Data.Provider.FileStorage</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Interfaces\DotNetBay.Interfaces.csproj">
-      <Project>{17745e6c-337c-44bd-9c50-5f1d45ceada5}</Project>
-      <Name>DotNetBay.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Test\DotNetBay.Test.csproj">
-      <Project>{9dfa662d-5cf3-43e6-88e1-61d4d1fe02ad}</Project>
-      <Name>DotNetBay.Test</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DotNetBay.BusinessLogic\DotNetBay.BusinessLogic.csproj">
-      <Project>{9ef46b21-b552-4cc6-a4c0-e81091a4064b}</Project>
-      <Name>DotNetBay.BusinessLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DotNetBay.Cmd\DotNetBay.Cmd.csproj">
-      <Project>{eb070b8c-4cbf-425d-90fa-48834dbee9b8}</Project>
-      <Name>DotNetBay.Cmd</Name>
     </ProjectReference>
     <ProjectReference Include="..\DotNetBay.Data.Entity\DotNetBay.Data.Entity.csproj">
       <Project>{908d8739-3185-46eb-a03e-6b6c3849857c}</Project>
