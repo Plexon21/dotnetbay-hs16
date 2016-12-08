@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dotnetbay - A .NET Auction Bootstrapper 
 Master: [![Build status](https://ci.appveyor.com/api/projects/status/icb7nq9u7spaapfx/branch/master?svg=true)](https://ci.appveyor.com/project/krma/dotnetbay-hs16/branch/master)
 Project: [![Build status](https://ci.appveyor.com/api/projects/status/icb7nq9u7spaapfx?svg=true)](https://ci.appveyor.com/project/krma/dotnetbay-hs16)
@@ -8,12 +9,32 @@ Ths solution contains the sample implementation for lab03 WPF GUI & XAML
 
 
 See more details on the official course website: http://web.fhnw.ch/plattformen/dnead
+=======
+# dotnetbay - A .NET Auction Solution 
+<!--- Master: [![Build status](https://ci.appveyor.com/api/projects/status/l1ook550stg4kxtg/branch/master?svg=true)](https://ci.appveyor.com/project/michaelschnyder/dotnetbay-hs15/branch/master)
+-->
+Project: [![Build status](https://ci.appveyor.com/api/projects/status/l1ook550stg4kxtg?svg=true)](https://ci.appveyor.com/project/krma/dotnetbay-fs16-210th)
+
+A bootstrap solution to build your own basic auction portal. For an implementation example visit https://github.com/FHNW-dnead/dotnetbay-fs16
+
+## Goals
+This is the starting point for various extensions to the core business library. The current storage implementation is done by serializing data to json-files. There is no graphical user interface, just a command line.
+
+With focus on the .NET-Stack, at least the following technologies should be added to extend the base implementation.
+
+* WPF / XAML UI
+* EntityFramework
+* ASP.NET MVC 5
+* ASP.NET WebApi
+* ASP.NET SignalR
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 
 ## Contribution
 The following products / tools are needed to contribute / fork.
 
 **For Development**
 * Microsoft Visual Studio 2015 (at least Community Version). [https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx "https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx")
+<<<<<<< HEAD
 * JetBrains ReSharper [https://www.jetbrains.com/student/](https://www.jetbrains.com/student/ "https://www.jetbrains.com/student/")
 
 **For Pleasure**
@@ -23,6 +44,20 @@ The following products / tools are needed to contribute / fork.
 ## Authors
 * Michael Schnyder
 * Martin Kropp, martin.kropp@fhnw.ch
+=======
+* Jetbrains ReSharper (optional). [https://www.jetbrains.com/student/](https://www.jetbrains.com/student/ "https://www.jetbrains.com/student/")
+* StyleCop Rules (optional, VS 2015 only). [https://johnkoerner.com/csharp/using-analyzers-in-your-projects/] ("https://johnkoerner.com/csharp/using-analyzers-in-your-projects/") 
+
+
+**For Pleasure**
+* SourceTree [http://www.sourcetreeapp.com/](http://www.sourcetreeapp.com/ "http://www.sourcetreeapp.com/")
+* MarkdownPad [http://markdownpad.com/](http://markdownpad.com/ "http://markdownpad.com/")
+* NCrunch [http://www.ncrunch.net/](http://www.ncrunch.net/ http://www.ncrunch.net/)
+
+## Authors
+* Michael Schnyder
+* Martin Kropp
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 
 ## License
 Licensed under the MIT License

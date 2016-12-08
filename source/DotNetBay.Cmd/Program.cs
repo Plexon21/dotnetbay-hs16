@@ -3,7 +3,11 @@ using System.Linq;
 
 using DotNetBay.Core;
 using DotNetBay.Core.Execution;
+<<<<<<< HEAD
 using DotNetBay.Data.Provider.FileStorage;
+=======
+using DotNetBay.Data.FileStorage;
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 
 namespace DotNetBay.Cmd
 {

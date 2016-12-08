@@ -9,9 +9,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DotNetBay.Interfaces</RootNamespace>
     <AssemblyName>DotNetBay.Interfaces</AssemblyName>
+<<<<<<< HEAD
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+=======
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,10 +26,16 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+<<<<<<< HEAD
     <CodeAnalysisRuleSet>
     </CodeAnalysisRuleSet>
     <DocumentationFile>
     </DocumentationFile>
+=======
+    <CodeAnalysisRuleSet>..\DotNetBay.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\DotNetBay.Interfaces.xml</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,8 +44,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+<<<<<<< HEAD
     <CodeAnalysisRuleSet>
     </CodeAnalysisRuleSet>
+=======
+    <CodeAnalysisRuleSet>..\DotNetBay.ruleset</CodeAnalysisRuleSet>
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <DocumentationFile>bin\Release\DotNetBay.Interfaces.xml</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -54,11 +69,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\DotNetBay.Data.Entity\DotNetBay.Data.Entity.csproj">
       <Project>{908D8739-3185-46EB-A03E-6B6C3849857C}</Project>
       <Name>DotNetBay.Data.Entity</Name>
     </ProjectReference>
   </ItemGroup>
+=======
+    <ProjectReference Include="..\DotNetBay.Model\DotNetBay.Model.csproj">
+      <Project>{908D8739-3185-46EB-A03E-6B6C3849857C}</Project>
+      <Name>DotNetBay.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

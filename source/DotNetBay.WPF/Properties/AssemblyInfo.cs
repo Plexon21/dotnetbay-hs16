@@ -10,9 +10,15 @@ using System.Windows;
 [assembly: AssemblyTitle("DotNetBay.WPF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
+<<<<<<< HEAD
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("DotNetBay.WPF")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
+=======
+[assembly: AssemblyCompany("Zuehlke Technology Group")]
+[assembly: AssemblyProduct("DotNetBay.WPF")]
+[assembly: AssemblyCopyright("Copyright © Zuehlke Technology Group 2015")]
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,11 +39,19 @@ using System.Windows;
 
 [assembly: ThemeInfo(
     ResourceDictionaryLocation.None, //where theme specific resource dictionaries are located
+<<<<<<< HEAD
                                      //(used if a resource is not found in the page, 
                                      // or application resource dictionaries)
     ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
                                               //(used if a resource is not found in the page, 
                                               // app, or any theme specific resource dictionaries)
+=======
+    //(used if a resource is not found in the page, 
+    // or application resource dictionaries)
+    ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
+    //(used if a resource is not found in the page, 
+    // app, or any theme specific resource dictionaries)
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 )]
 
 

@@ -2,9 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
+<<<<<<< HEAD
 using DotNetBay.Data.Entity;
 using DotNetBay.Data.Provider.FileStorage;
 using DotNetBay.Interfaces;
+=======
+using DotNetBay.Data.FileStorage;
+using DotNetBay.Interfaces;
+using DotNetBay.Model;
+
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 using NUnit.Framework;
 
 namespace DotNetBay.Test.Storage
@@ -14,6 +21,10 @@ namespace DotNetBay.Test.Storage
     {
         [SuppressMessage("Microsoft.Naming", "CA1707:IdentifiersShouldNotContainUnderscores", Justification = "These are tests, thats fine!")]
         [TestCase]
+<<<<<<< HEAD
+=======
+        [ExpectedException(typeof(FileStorageException))]
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
         public void GivenEmptyRepo_AddAuctionAndMemberFromOtherInstance_ShouldRaiseException()
         {
             var createdAuction = CreateAnAuction();
@@ -30,7 +41,11 @@ namespace DotNetBay.Test.Storage
                 initRepo.SaveChanges();
 
                 var testRepo = factory.CreateMainRepository();
+<<<<<<< HEAD
                 Assert.Throws<FileStorageException>(() => testRepo.Add(createdAuction));
+=======
+                testRepo.Add(createdAuction);
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
             }
         }
 

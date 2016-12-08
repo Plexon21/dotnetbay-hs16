@@ -9,9 +9,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DotNetBay.Cmd</RootNamespace>
     <AssemblyName>DotNetBay.Cmd</AssemblyName>
+<<<<<<< HEAD
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+=======
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -22,10 +27,16 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+<<<<<<< HEAD
     <DocumentationFile>
     </DocumentationFile>
     <CodeAnalysisRuleSet>
     </CodeAnalysisRuleSet>
+=======
+    <DocumentationFile>bin\Debug\DotNetBay.Cmd.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>..\DotNetBay.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,6 +47,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
+<<<<<<< HEAD
     <CodeAnalysisRuleSet>
     </CodeAnalysisRuleSet>
     <DocumentationFile>bin\Release\DotNetBay.Cmd.xml</DocumentationFile>
@@ -46,6 +58,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+=======
+    <CodeAnalysisRuleSet>..\DotNetBay.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\DotNetBay.Cmd.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -59,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+<<<<<<< HEAD
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DotNetBay.BusinessLogic\DotNetBay.BusinessLogic.csproj">
@@ -68,16 +98,41 @@
     <ProjectReference Include="..\DotNetBay.Data.Provider.FileStorage\DotNetBay.Data.Provider.FileStorage.csproj">
       <Project>{92942123-C7EC-4418-9B48-F5D62BE7E7A3}</Project>
       <Name>DotNetBay.Data.Provider.FileStorage</Name>
+=======
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetBay.Core\DotNetBay.Core.csproj">
+      <Project>{9EF46B21-B552-4CC6-A4C0-E81091A4064B}</Project>
+      <Name>DotNetBay.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNetBay.Data.FileStorage\DotNetBay.Data.FileStorage.csproj">
+      <Project>{92942123-C7EC-4418-9B48-F5D62BE7E7A3}</Project>
+      <Name>DotNetBay.Data.FileStorage</Name>
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
     </ProjectReference>
     <ProjectReference Include="..\DotNetBay.Interfaces\DotNetBay.Interfaces.csproj">
       <Project>{17745E6C-337C-44BD-9C50-5F1D45CEADA5}</Project>
       <Name>DotNetBay.Interfaces</Name>
     </ProjectReference>
+<<<<<<< HEAD
     <ProjectReference Include="..\DotNetBay.Data.Entity\DotNetBay.Data.Entity.csproj">
       <Project>{908D8739-3185-46EB-A03E-6B6C3849857C}</Project>
       <Name>DotNetBay.Data.Entity</Name>
     </ProjectReference>
   </ItemGroup>
+=======
+    <ProjectReference Include="..\DotNetBay.Model\DotNetBay.Model.csproj">
+      <Project>{908D8739-3185-46EB-A03E-6B6C3849857C}</Project>
+      <Name>DotNetBay.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

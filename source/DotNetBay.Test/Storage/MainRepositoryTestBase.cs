@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+<<<<<<< HEAD
 using DotNetBay.Data.Entity;
 using DotNetBay.Interfaces;
 using NUnit.Framework;
 using NUnit.Framework.Constraints;
+=======
+
+using DotNetBay.Interfaces;
+using DotNetBay.Model;
+
+using NUnit.Framework;
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 
 namespace DotNetBay.Test.Storage
 {
@@ -333,6 +341,10 @@ namespace DotNetBay.Test.Storage
 
         [SuppressMessage("Microsoft.Naming", "CA1707:IdentifiersShouldNotContainUnderscores", Justification = "These are tests, thats fine!")]
         [TestCase]
+<<<<<<< HEAD
+=======
+        [ExpectedException]
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
         public void GivenEmptyRepo_AddMemberWithAuctionsFromOtherInstance_ShouldRaiseException()
         {
             var createdAuction = CreateAnAuction();
@@ -352,7 +364,12 @@ namespace DotNetBay.Test.Storage
                 initRepo.SaveChanges();
 
                 var testSore = factory.CreateMainRepository();
+<<<<<<< HEAD
                 Assert.Throws(new AssignableToConstraint(typeof(Exception)), () => testSore.Add(otherMember));
+=======
+                testSore.Add(otherMember);
+                testSore.SaveChanges();
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
             }
         }
 

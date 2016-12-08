@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Linq;
 using System.Windows;
@@ -6,6 +7,9 @@ using DotNetBay.Core.Execution;
 using DotNetBay.Data.Entity;
 using DotNetBay.Data.Provider.FileStorage;
 using DotNetBay.Interfaces;
+=======
+﻿using System.Windows;
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 
 namespace DotNetBay.WPF
 {
@@ -14,6 +18,7 @@ namespace DotNetBay.WPF
     /// </summary>
     public partial class App : Application
     {
+<<<<<<< HEAD
         public IMainRepository MainRepository { get; private set; }
         public IAuctionRunner AuctionRunner { get; private set; }
 
@@ -48,6 +53,10 @@ namespace DotNetBay.WPF
                     Seller = me
                 });
             }
+=======
+        public App()
+        {
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
         }
     }
 }

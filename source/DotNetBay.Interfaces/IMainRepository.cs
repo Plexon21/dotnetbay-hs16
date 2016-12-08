@@ -1,7 +1,12 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+<<<<<<< HEAD
 using DotNetBay.Data.Entity;
+=======
+
+using DotNetBay.Model;
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
 
 namespace DotNetBay.Interfaces
 {

@@ -1,8 +1,12 @@
 ﻿<Application x:Class="DotNetBay.WPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+<<<<<<< HEAD
              xmlns:local="clr-namespace:DotNetBay.WPF"
              StartupUri="MainWindow.xaml">
+=======
+             StartupUri="View/MainWindow.xaml">
+>>>>>>> a1f96a6ab557bc6cbdf495008e8eb8202abbefdd
     <Application.Resources>
          
     </Application.Resources>
